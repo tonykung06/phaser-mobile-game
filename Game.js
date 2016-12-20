@@ -9,7 +9,7 @@ BunnyDefender.Game = function(game) {
 	this.overmessage;
 	this.secondsElapsed;
 	this.timer;
-	this.music;
+    this.music;
 	this.ouch;
 	this.boom;
 	this.ding;
@@ -107,7 +107,6 @@ BunnyDefender.Game.prototype = {
 	    this.burst.makeParticles('explosion');
 	    this.input.onDown.add(this.fireBurst, this);
 	},
-
 	fireBurst: function(pointer) {
 		if (this.gameover) {
 			return;
